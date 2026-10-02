@@ -1,0 +1,34 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 11 Sep 2026 16:02:50 at https://html.kodesolution.com/2024/sotech-html/index-4.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://html.kodesolution.com/2024/sotech-html/index-4.html -O1 "C:\My Web Sites\arinoz" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/app3/pric-bg-globe-gray.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/pattern-3.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/cat-1-bg.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/cat-2-bg.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/cat-3-bg.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/cat-4-bg.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:26	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/images/icons/shape-7.png (from https://html.kodesolution.com/2024/sotech-html/css/style.css)
+16:05:38	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/css/responsive.css (from https://html.kodesolution.com/2024/sotech-html/intro.html)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/shop-details.html (from https://html.kodesolution.com/2024/sotech-html/shop-products-sidebar.html)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/css/owl.video.play.png (from https://html.kodesolution.com/2024/sotech-html/css/owl.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/css/images/ui-icons_777620_256x240.png (from https://html.kodesolution.com/2024/sotech-html/css/jquery-ui.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/css/images/ui-icons_cc0000_256x240.png (from https://html.kodesolution.com/2024/sotech-html/css/jquery-ui.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/fonts/flaticon-business.eot (from https://html.kodesolution.com/2024/sotech-html/css/flaticon.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/fonts/flaticon-business.eot? (from https://html.kodesolution.com/2024/sotech-html/css/flaticon.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/css/fonts/flaticon-business.svg (from https://html.kodesolution.com/2024/sotech-html/css/flaticon.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/css/openhand.cur (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/css/closedhand.cur (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/gridtile.png (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/gridtile_white.png (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/gridtile_3x3.png (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/gridtile_3x3_white.png (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/coloredbg.png (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+16:05:50	Error: 	"Not Found" (404) at link https://html.kodesolution.com/2024/sotech-html/intro/rev/assets/loader.gif (from https://html.kodesolution.com/2024/sotech-html/intro/rev/css/rs6.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 0 seconds : 467 links scanned, 443 files written (31792424 bytes overall) [25791117 bytes received at 143283 bytes/sec], 9003676 bytes transferred using HTTP compression in 144 files, ratio 28%, 116.7 requests per connection
+(23 errors, 0 warnings, 0 messages)

@@ -1,0 +1,2033 @@
+/* =========================================================
+   LOGO & NAVBAR HEIGHT
+   Scoped strictly to .header-lower so mobile menu,
+   sticky header, footer, and other sections are unaffected.
+========================================================= */
+
+/* Fix only the main navbar bar height to 100px */
+.header-style-two .header-lower .main-box {
+    height: 100px;
+}
+
+/* Constrain logo image only inside the header-lower navbar */
+.header-style-two .header-lower .logo-box .logo img {
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.image a img {
+    height: 104px;
+    padding: 20px;
+    width: 100px;
+}
+
+.btn-style-submitt {
+    background-color: #0a2a5e;
+}
+
+/* =========================================================
+   STICKY CONTACT BUTTON
+========================================================= */
+
+.web-contact-float {
+    position: fixed;
+    right: 28px;
+    bottom: 88px;
+    z-index: 101;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-bg-theme-color2, #ffffff);
+    background: var(--theme-color2, #f7941d);
+    border: 3px solid var(--theme-color-light, #ffffff);
+    border-radius: 50%;
+    /* box-shadow: 0 8px 20px rgba(10, 42, 94, 0.22); */
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web-contact-float:hover {
+    color: var(--text-color-bg-theme-color1, #ffffff);
+    background: var(--theme-color1, #0a2a5e);
+    box-shadow: 0 10px 24px rgba(10, 42, 94, 0.3);
+    transform: translateY(-3px);
+}
+
+.web-contact-float:focus-visible {
+    outline: 3px solid var(--theme-color1, #0a2a5e);
+    outline-offset: 4px;
+}
+
+@media (max-width: 575px) {
+    .web-contact-float {
+        right: 16px;
+        bottom: 78px;
+        width: 50px;
+        height: 50px;
+        font-size: 19px;
+    }
+}
+
+/* ===== SERVICES MEGA MENU ===== */
+@media (min-width: 1024px) {
+    .main-menu .navigation>li.services-menu>.services-mega-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 860px;
+        max-width: calc(100vw - 40px);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 30px;
+        padding: 30px 35px 0;
+        background: #fff;
+        border-top: 3px solid var(--theme-color2);
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .05), -2px 0 5px 1px rgba(0, 0, 0, .05);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(20px);
+        transition: all 300ms ease;
+        z-index: 100;
+    }
+
+    .main-menu .navigation>li.services-menu:hover>.services-mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.services-column h4 {
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--theme-color1);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #eee;
+}
+
+.services-column h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 30px;
+    height: 2px;
+    background: var(--theme-color2);
+}
+
+.services-column ul li {
+    border: 0;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.services-column ul li a {
+    display: block;
+    padding: 7px 0;
+    font-size: 15px;
+    color: #3E3E4B;
+    text-align: left;
+    transition: all 250ms ease;
+}
+
+.services-column ul li a:hover {
+    color: var(--theme-color2);
+    padding-left: 6px;
+}
+
+.services-menu-bottom {
+    grid-column: 1 / -1;
+    margin: 15px -35px 0;
+    padding: 14px 35px;
+    background: var(--theme-color3);
+    text-align: right;
+}
+
+.services-menu-bottom a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--theme-color1);
+}
+
+.services-menu-bottom a:hover {
+    color: var(--theme-color2);
+}
+
+.services-menu-bottom i {
+    margin-left: 8px;
+    transition: transform 250ms ease;
+}
+
+.services-menu-bottom a:hover i {
+    transform: translateX(4px);
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu .services-mega-menu {
+    display: none;
+    padding: 5px 0 10px 20px;
+}
+
+.mobile-menu .services-column h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--theme-color2);
+    margin: 12px 20px 4px 0;
+    border: 0;
+    padding: 0;
+}
+
+.mobile-menu .services-column h4::after {
+    display: none;
+}
+
+.mobile-menu .services-menu-bottom {
+    margin: 10px 0 0;
+    padding: 8px 20px;
+    background: none;
+    text-align: left;
+}
+
+.mobile-menu .services-menu-bottom a {
+    color: #fff;
+}
+
+
+
+/* =========================================================
+   SITE-WIDE FIXES (used across the whole template)
+========================================================= */
+
+/* logo */
+.header-style-two .header-lower .main-box {
+    height: 100px;
+}
+
+.cust-title h1 {
+    color: var(--heading-color);
+    font-family: var(--title-font);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--line-height-heading-h2);
+}
+
+/* Constrain logo image only inside the header-lower navbar */
+.header-style-two .header-lower .logo-box .logo img {
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.image a img {
+    height: 104px;
+    padding: 20px;
+    width: 100px;
+}
+
+.btn-style-submitt {
+    background-color: #0a2a5e;
+}
+
+
+/* =========================================================
+   AI BASED DUTY ALLOCATION SYSTEM — PORTFOLIO PAGE
+   Template architecture, CSS root variables, responsive.
+========================================================= */
+
+/* Typography & Root Variables */
+.duty-portfolio-page {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+.duty-portfolio-page h1,
+.duty-portfolio-page h2,
+.duty-portfolio-page h3,
+.duty-portfolio-page h4,
+.duty-portfolio-page h5,
+.duty-portfolio-page h6 {
+    font-family: var(--title-font);
+    color: var(--headings-color);
+    font-weight: 700;
+}
+
+.duty-portfolio-page h2 {
+    font-size: var(--h2-font-size);
+    line-height: var(--line-height-heading-h2);
+}
+
+.duty-portfolio-page h3 {
+    font-size: var(--h3-font-size);
+    line-height: var(--line-height-heading);
+}
+
+.duty-portfolio-page h4 {
+    font-size: var(--h4-font-size);
+    line-height: var(--line-height-heading-small);
+}
+
+/* Universal Text Justify */
+.duty-portfolio-page p,
+.duty-portfolio-page .text,
+.duty-portfolio-page ul.list-style-three li,
+.duty-portfolio-page .acc-content .content .text,
+.duty-portfolio-page .duty-module-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* =========================================================
+   AUTO-CONTAINER HORIZONTAL MARGIN
+   Template's .auto-container already centers + constrains
+   width. We add horizontal padding for breathing room.
+========================================================= */
+.duty-portfolio-page .auto-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* =========================================================
+   SECTION SPACING
+========================================================= */
+.duty-portfolio-page .duty-overview-section,
+.duty-portfolio-page .duty-challenge-section {
+    position: relative;
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.duty-portfolio-page .duty-solution-section {
+    position: relative;
+    padding: 80px 0;
+    background: var(--bg-theme-color3);
+}
+
+.duty-portfolio-page .duty-modules-section {
+    position: relative;
+    padding: 80px 0 70px;
+    background: #ffffff;
+}
+
+.duty-portfolio-page .duty-screens-section {
+    position: relative;
+    padding: 80px 0 70px;
+    background: var(--bg-theme-color3);
+}
+
+.duty-portfolio-page .duty-faq-section {
+    position: relative;
+    padding: 80px 0;
+    background: var(--bg-theme-color3);
+}
+
+.sticky-header .inner-container {
+    flex-wrap: nowrap;
+}
+.sticky-header .main-menu .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.sticky-header .main-menu .navigation > li {
+    margin: 0 0 0 40px;   /* spacing like your target screenshot */
+    padding: 20px 0;
+}
+.sticky-header .nav-outer {
+    display: flex;
+    align-items: center;
+}
+/* keep the sticky header from showing its own toggler on desktop */
+@media (min-width: 1024px) {
+    .sticky-header .mobile-nav-toggler { display: none; }
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+.duty-portfolio-page .sec-title {
+    margin-bottom: 40px;
+}
+
+.duty-portfolio-page .sec-title.text-center {
+    text-align: center;
+}
+
+.duty-portfolio-page .sec-title .sub-title {
+    font-family: var(--sec-title-subtitle-font-family);
+    font-size: var(--sec-title-subtitle-font-size);
+    font-weight: var(--sec-title-subtitle-font-weight);
+    color: var(--sec-title-subtitle-color);
+    display: inline-block;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Decorative lines beside centered subtitle */
+.duty-portfolio-page .sec-title.text-center .sub-title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 2px;
+    background: var(--theme-color2);
+    margin-right: 10px;
+}
+
+.duty-portfolio-page .sec-title.text-center .sub-title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 2px;
+    background: var(--theme-color2);
+    margin-left: 10px;
+}
+
+.duty-portfolio-page .sec-title h2 {
+    font-family: var(--title-font);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    color: var(--headings-color);
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.duty-portfolio-page .sec-title .text,
+.duty-portfolio-page .sec-title p {
+    font-family: var(--text-font);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: #666666;
+    max-width: 760px;
+    margin: 12px auto 0;
+    text-align: center;
+}
+
+/* =========================================================
+   PROJECT OVERVIEW — two-column image + text layout
+========================================================= */
+.duty-portfolio-page .duty-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.duty-portfolio-page .duty-overview-text {
+    position: relative;
+}
+
+.duty-portfolio-page .overview-subheading {
+    position: relative;
+    margin: 0 0 20px;
+    padding-left: 18px;
+    font-family: var(--title-font);
+    font-size: var(--h3-font-size);
+    font-weight: 700;
+    color: var(--headings-color);
+    line-height: 1.4;
+}
+
+.duty-portfolio-page .overview-subheading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 4px;
+    height: 28px;
+    background: var(--theme-color2);
+    border-radius: 2px;
+}
+
+.duty-portfolio-page .duty-overview-text p {
+    font-family: var(--text-font);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: #444444;
+    margin-bottom: 18px;
+}
+
+.duty-portfolio-page .duty-overview-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Overview image */
+.duty-portfolio-page .duty-overview-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(10, 42, 94, 0.12);
+}
+
+.duty-portfolio-page .duty-overview-image img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.duty-portfolio-page .duty-overview-image:hover img {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   CHALLENGE SECTION
+========================================================= */
+.duty-portfolio-page .duty-challenge-intro {
+    font-family: var(--text-font);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: #444444;
+    margin-bottom: 28px;
+    max-width: 820px;
+}
+
+.duty-portfolio-page .duty-subheading {
+    position: relative;
+    margin: 30px 0 20px;
+    padding-left: 16px;
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--headings-color);
+    line-height: 1.35;
+}
+
+.duty-portfolio-page .duty-subheading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 4px;
+    height: 24px;
+    background: var(--theme-color2);
+    border-radius: 2px;
+}
+
+/* Bullet List */
+.duty-portfolio-page ul.list-style-three {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.duty-portfolio-page ul.list-style-three li {
+    position: relative;
+    font-family: var(--text-font);
+    font-size: var(--body-font-size);
+    line-height: 28px;
+    font-weight: 400;
+    color: #444444;
+    padding-left: 32px;
+    margin-bottom: 14px;
+}
+
+.duty-portfolio-page ul.list-style-three li::before {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content: "\f058";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
+    color: var(--theme-color2);
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.duty-portfolio-page ul.list-style-three li strong {
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: var(--headings-color);
+}
+
+.duty-portfolio-page .duty-problem-areas {
+    padding-top: 25px;
+    border-top: 1px solid #eeeeee;
+    margin-top: 30px;
+}
+
+/* =========================================================
+   SOLUTION SERVICE BLOCKS
+========================================================= */
+.duty-portfolio-page .duty-solution-section .service-block-three .inner-box {
+    min-height: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.duty-portfolio-page .duty-solution-section .service-block-three .text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* =========================================================
+   SYSTEM ARCHITECTURE MODULE CARDS — COMPACT 4-COLUMN GRID
+========================================================= */
+.duty-portfolio-page .duty-modules-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 0 auto;
+}
+
+.duty-portfolio-page .duty-module-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e8ecf0;
+    border-top: 3px solid var(--theme-color2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: all 280ms ease;
+    height: 100%;
+}
+
+.duty-portfolio-page .duty-module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(10, 42, 94, 0.13);
+    border-top-color: var(--theme-color1);
+}
+
+.duty-portfolio-page .duty-module-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.duty-portfolio-page .duty-module-icon-box {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(247, 148, 29, 0.10);
+    color: var(--theme-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+    transition: all 250ms ease;
+}
+
+.duty-portfolio-page .duty-module-card:hover .duty-module-icon-box {
+    background-color: var(--theme-color2);
+    color: #ffffff;
+}
+
+.duty-portfolio-page .duty-module-badge {
+    font-family: var(--title-font);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--theme-color2);
+    border: 1.5px solid var(--theme-color2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    line-height: 1.4;
+    transition: all 250ms ease;
+    white-space: nowrap;
+}
+
+.duty-portfolio-page .duty-module-card:hover .duty-module-badge {
+    background-color: var(--theme-color1);
+    border-color: var(--theme-color1);
+    color: #ffffff;
+}
+
+.duty-portfolio-page .duty-module-title {
+    font-family: var(--title-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--headings-color);
+    margin-top: 0;
+    margin-bottom: 7px;
+    line-height: 1.3;
+}
+
+.duty-portfolio-page .duty-module-text {
+    font-family: var(--text-font);
+    font-size: 12.5px;
+    line-height: 20px;
+    color: #666666;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* =========================================================
+   PROJECT SCREENS GALLERY
+========================================================= */
+.duty-portfolio-page .duty-screen-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 300ms ease;
+    background: #ffffff;
+    margin-bottom: 0;
+}
+
+.duty-portfolio-page .duty-screen-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(10, 42, 94, 0.14);
+}
+
+.duty-portfolio-page .duty-screen-card .screen-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.duty-portfolio-page .duty-screen-card .screen-img-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.duty-portfolio-page .duty-screen-card:hover .screen-img-wrap img {
+    transform: scale(1.06);
+}
+
+.duty-portfolio-page .duty-screen-card .screen-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 42, 94, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.duty-portfolio-page .duty-screen-card:hover .screen-overlay {
+    opacity: 1;
+}
+
+.duty-portfolio-page .duty-screen-card .screen-overlay a {
+    width: 46px;
+    height: 46px;
+    background: var(--theme-color2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.duty-portfolio-page .duty-screen-card .screen-overlay a:hover {
+    transform: scale(1.1);
+}
+
+.duty-portfolio-page .duty-screen-card .screen-label {
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.duty-portfolio-page .duty-screen-card .screen-label span {
+    font-family: var(--title-font);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--theme-color2);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.duty-portfolio-page .duty-screen-card .screen-label h5 {
+    font-family: var(--title-font);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--headings-color);
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* =========================================================
+   FAQ ACCORDION
+========================================================= */
+.duty-portfolio-page .accordion-box {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.duty-portfolio-page .accordion-box .accordion {
+    position: relative;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border: 1px solid #e8ecf0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.duty-portfolio-page .accordion-box .acc-btn {
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--headings-color);
+    padding: 18px 55px 18px 22px;
+    cursor: pointer;
+}
+
+.duty-portfolio-page .accordion-box .acc-btn .icon {
+    font-size: 13px;
+    color: var(--theme-color2);
+}
+
+.duty-portfolio-page .accordion-box .acc-content {
+    padding: 0 22px 20px 22px;
+}
+
+.duty-portfolio-page .accordion-box .acc-content .text {
+    font-family: var(--text-font);
+    font-size: var(--body-font-size);
+    line-height: 28px;
+    color: #555555;
+    margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 1200px) {
+    .duty-portfolio-page .duty-modules-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .duty-portfolio-page .duty-overview-section,
+    .duty-portfolio-page .duty-challenge-section,
+    .duty-portfolio-page .duty-solution-section,
+    .duty-portfolio-page .duty-modules-section,
+    .duty-portfolio-page .duty-screens-section,
+    .duty-portfolio-page .duty-faq-section {
+        padding: 60px 0;
+    }
+
+    .duty-portfolio-page .sec-title h2 {
+        font-size: 34px;
+    }
+
+    .duty-portfolio-page .duty-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .duty-portfolio-page .duty-overview-image {
+        order: -1;
+    }
+
+    .duty-portfolio-page .duty-overview-image img {
+        height: 300px;
+    }
+
+    .duty-portfolio-page .duty-modules-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+    .duty-portfolio-page .overview-subheading,
+    .duty-portfolio-page .duty-subheading {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .duty-portfolio-page .auto-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .duty-portfolio-page .sec-title h2 {
+        font-size: 28px;
+    }
+
+    .duty-portfolio-page .duty-modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .duty-portfolio-page .duty-module-card {
+        padding: 15px 13px 13px;
+    }
+
+    .duty-portfolio-page .duty-module-icon-box {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .duty-portfolio-page .duty-module-title {
+        font-size: 13px;
+    }
+
+    .duty-portfolio-page .duty-module-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .duty-portfolio-page .duty-overview-section,
+    .duty-portfolio-page .duty-challenge-section,
+    .duty-portfolio-page .duty-solution-section,
+    .duty-portfolio-page .duty-modules-section,
+    .duty-portfolio-page .duty-screens-section,
+    .duty-portfolio-page .duty-faq-section {
+        padding: 50px 0;
+    }
+
+    .duty-portfolio-page .sec-title h2 {
+        font-size: 24px;
+    }
+
+    .duty-portfolio-page .duty-modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .duty-portfolio-page ul.list-style-three li {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .duty-portfolio-page .duty-screen-card .screen-img-wrap {
+        height: 155px;
+    }
+
+    .duty-portfolio-page .overview-subheading,
+    .duty-portfolio-page .duty-subheading {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   WEAPON ARMORY - 6 CHALLENGES LIST
+========================================================= */
+
+.weapon-challenges-list {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.weapon-challenge-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 13px 18px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.weapon-challenge-item .challenge-number {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f1f1f1;
+    color: #0a2a5e;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.weapon-challenge-item .challenge-title {
+    color: #0a2a5e;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+/* Active challenge */
+
+.weapon-challenge-item.active {
+    background: #fff4e8;
+}
+
+.weapon-challenge-item.active .challenge-number {
+    background: #f7941d;
+    color: #ffffff;
+}
+
+.weapon-challenge-item.active .challenge-title {
+    color: #0a2a5e;
+}
+
+/* Hover */
+
+.weapon-challenge-item:hover {
+    background: #fff4e8;
+}
+
+.weapon-challenge-item:hover .challenge-number {
+    background: #f7941d;
+    color: #ffffff;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .weapon-challenges-list {
+        margin-top: 25px;
+    }
+
+    .weapon-challenge-item {
+        gap: 12px;
+        padding: 10px 12px;
+    }
+
+    .weapon-challenge-item .challenge-number {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 13px;
+    }
+
+    .weapon-challenge-item .challenge-title {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* =========================================================
+   WEAPON ARMORY - CHALLENGES SECTION
+========================================================= */
+
+.weapon-armory-challenges {
+    position: relative;
+    padding: 110px 0 130px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.weapon-armory-challenges .sec-title {
+    margin-bottom: 60px;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.weapon-challenge-layout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 570px;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.weapon-challenge-content {
+    position: relative;
+    width: 50%;
+    padding-right: 50px;
+    z-index: 5;
+}
+
+.weapon-challenge-list {
+    position: relative;
+    width: 100%;
+    max-width: 570px;
+}
+
+
+.weapon-challenge-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 12px 16px;
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.weapon-challenge-number {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f4f5f8;
+    color: #0a2a5e;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+.weapon-challenge-title {
+    color: #0a2a5e;
+
+    font-size: 17px;
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* ACTIVE LIST ITEM */
+
+.weapon-challenge-item.active {
+    background: #fff4e8;
+}
+
+
+.weapon-challenge-item.active .weapon-challenge-number {
+    background: #f7941d;
+    color: #ffffff;
+}
+
+
+.weapon-challenge-item.active .weapon-challenge-title {
+    color: #0a2a5e;
+}
+
+
+/* HOVER */
+
+.weapon-challenge-item:hover {
+    background: #fff4e8;
+}
+
+
+/* =========================================================
+   ACTIVE CHALLENGE INFORMATION
+========================================================= */
+
+.weapon-active-challenge {
+    margin-top: 30px;
+    padding-left: 16px;
+    max-width: 560px;
+}
+
+
+.weapon-active-number {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #f7941d;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.weapon-active-challenge h3 {
+    margin-bottom: 12px;
+
+    color: #0a2a5e;
+
+    font-size: 27px;
+    line-height: 1.3;
+}
+
+
+.weapon-active-challenge p {
+    margin-bottom: 0;
+
+    color: #7c7f86;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.weapon-challenge-visual {
+    position: relative;
+
+    width: 50%;
+    height: 570px;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   LARGE CIRCLE
+========================================================= */
+
+.weapon-main-circle {
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px;
+
+    border-radius: 50%;
+
+    background: #0a2a5e;
+
+    z-index: 2;
+
+    box-shadow:
+        0 20px 60px rgba(10, 42, 94, 0.18);
+
+
+    transition: none;
+}
+
+
+.weapon-main-image {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+}
+
+
+.weapon-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+
+/* =========================================================
+   SIX SMALL CIRCLES
+========================================================= */
+
+.weapon-small-circle {
+    position: absolute;
+
+    width: 92px;
+    height: 92px;
+
+    padding: 5px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.weapon-small-circle img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* ACTIVE SMALL CIRCLE */
+
+.weapon-small-circle.active {
+    border-color: #f7941d;
+
+    transform: scale(1.12);
+
+    box-shadow:
+        0 10px 30px rgba(247, 148, 29, 0.30);
+}
+
+.weapon-circle-1.active,
+.weapon-circle-4.active {
+    transform: translateX(-50%) scale(1.12);
+}
+
+.weapon-small-circle:hover {
+    transform: scale(1.08);
+}
+
+.weapon-circle-1:hover,
+.weapon-circle-4:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+
+/* =========================================================
+   SIX POSITIONS
+========================================================= */
+.weapon-circle-1 {
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.weapon-circle-2 {
+    top: 35px;
+    right: -35px;
+}
+
+.weapon-circle-3 {
+    bottom: 35px;
+    right: -35px;
+}
+
+.weapon-circle-4 {
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.weapon-circle-5 {
+    bottom: 35px;
+    left: -35px;
+}
+
+.weapon-circle-6 {
+    top: 35px;
+    left: -35px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media only screen and (max-width: 1199px) {
+
+    .weapon-main-circle {
+        width: 380px;
+        height: 380px;
+    }
+
+    .weapon-challenge-visual {
+        height: 500px;
+    }
+
+    .weapon-small-circle {
+        width: 82px;
+        height: 82px;
+    }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .weapon-challenge-layout {
+        display: block;
+    }
+
+    .weapon-challenge-content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .weapon-challenge-visual {
+        width: 100%;
+        height: 500px;
+    }
+
+    .weapon-main-circle {
+        width: 360px;
+        height: 360px;
+    }
+
+    .weapon-small-circle {
+        width: 78px;
+        height: 78px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .weapon-armory-challenges {
+        padding: 70px 0 80px;
+    }
+
+    .weapon-challenge-item {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .weapon-challenge-number {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 12px;
+    }
+
+    .weapon-challenge-title {
+        font-size: 14px;
+    }
+
+    .weapon-active-challenge {
+        padding-left: 10px;
+    }
+
+    .weapon-active-challenge h3 {
+        font-size: 22px;
+    }
+
+    .weapon-active-challenge p {
+        font-size: 14px;
+    }
+
+    .weapon-challenge-visual {
+        height: 390px;
+    }
+
+    .weapon-main-circle {
+        width: 270px;
+        height: 270px;
+        padding: 10px;
+    }
+
+    .weapon-small-circle {
+        width: 62px;
+        height: 62px;
+        padding: 3px;
+        border-width: 3px;
+    }
+
+    .weapon-circle-2 {
+        top: 55px;
+    }
+
+    .weapon-circle-3 {
+        bottom: 55px;
+    }
+
+    .weapon-circle-5 {
+        bottom: 55px;
+    }
+
+    .weapon-circle-6 {
+        top: 55px;
+    }
+
+}
+
+
+
+/* =========================================================
+   WEAPON ARMORY - CONTENT INSIDE BIG CIRCLE
+========================================================= */
+.weapon-main-circle {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 430px;
+    height: 430px;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 15px;
+
+    border-radius: 50%;
+
+    background: #0a2a5e;
+
+    z-index: 2;
+
+    box-shadow:
+        0 20px 60px rgba(10, 42, 94, 0.18);
+
+    transition: none;
+}
+
+.weapon-circle-content {
+    position: relative;
+    z-index: 10;
+
+    width: 75%;
+    max-width: 320px;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.weapon-circle-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 75px;
+    padding: 8px 18px;
+    margin-bottom: 18px;
+
+    border-radius: 30px;
+
+    background: #f7941d;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.weapon-circle-content h3 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.weapon-circle-content p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
+    .weapon-circle-content {
+        width: 72%;
+    }
+
+    .weapon-circle-content h3 {
+        font-size: 19px;
+    }
+
+    .weapon-circle-content p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .weapon-circle-number {
+        min-width: 65px;
+        padding: 7px 14px;
+        margin-bottom: 12px;
+    }
+}
+
+/* new css need to send*/
+
+
+
+/* E-Canteen Problem Statement Image - Final */
+/* E-Canteen Problem Statement Image */
+
+.offer-section-five .image-column .image-box.e-canteen-problem-image {
+    position: relative;
+    margin-left: -345px;
+    top: 20px;
+}
+
+.offer-section-five .image-column .image-box.e-canteen-problem-image .image {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.offer-section-five .image-column .image-box.e-canteen-problem-image .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+}
+
+/* =========================================================
+   POLICE DUTY PAGE — HEIGHT & ALIGNMENT FIXES
+========================================================= */
+
+/* 1. Key Features Grid (service-block-six) Equal Heights */
+.services-section-six .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-block-six {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.service-block-six .inner-box {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 25px 25px;
+}
+
+.service-block-six .title {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+/* Key Features: no section background, so switch light text to dark */
+.services-section-six:before {
+    background-color: transparent;
+    background-image: none;
+}
+
+.services-section-six .sec-title.light h2 {
+    color: #0a2a5e;
+}
+
+.service-block-six .inner-box {
+    border-color: #e1e4ea;
+}
+
+.service-block-six .title,
+.service-block-six .inner-box:after {
+    color: #0a2a5e;
+}
+
+/* =========================================================
+   2. Project Flow carousel (news-section-two)
+   Title on the left, cards bleeding off the right edge,
+   one arrow pair under the title (desktop only)
+========================================================= */
+
+.news-section-two {
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f5f8;
+    padding: 70px 0 ;
+}
+
+/* Left content */
+.news-section-two .title-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.news-section-two .title-column .sec-title {
+    margin-bottom: 0;
+}
+
+.news-section-two .title-column .sub-title {
+    display: block;
+    color: #f7941d;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.news-section-two .title-column h2 {
+    color: var(--sec-title-color);
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.news-section-two .title-column .text {
+    /* color: rgba(255, 255, 255, 0.6); */
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 45px;
+}
+
+/* Carousel */
+.news-section-two .carousel-column {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.news-section-two .carousel-column .carousel-outer {
+    position: relative;
+    margin-right: -410px;
+}
+
+.news-section-two .news-carousel .owl-stage {
+    display: flex;
+}
+
+.news-section-two .news-carousel .owl-item {
+    display: flex;
+}
+
+/* Cards */
+.news-section-two .carousel-column .news-block {
+    width: 100%;
+    padding: 0 20px 30px;
+    margin-bottom: 0;
+}
+
+.news-section-two .news-block .inner-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.news-section-two .news-block .image-box {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e9ecf2;
+}
+
+.news-section-two .news-block .image-box .image,
+.news-section-two .news-block .image-box .image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.news-section-two .news-block .image-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 30px;
+}
+
+/* Card title */
+.news-section-two .news-block .content-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    padding: 25px 40px;
+    background: #ffffff;
+}
+
+.news-section-two .news-block .content-box .title {
+    margin: 0;
+    color: #0a2a5e;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.news-section-two .news-block .content-box .title a {
+    color: inherit;
+}
+
+/* Arrows: pulled back under the title column */
+.news-section-two .news-carousel .owl-nav {
+    position: absolute;
+    left: -400px;
+    bottom: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-section-two .news-carousel .owl-nav .owl-prev,
+.news-section-two .news-carousel .owl-nav .owl-next {
+    display: block;
+    width: 66px;
+    height: 66px;
+    margin-right: 14px;
+    border: 2px solid #f7941d;
+    border-radius: 50%;
+    background: transparent;
+    color: #f7941d;
+    font-size: 22px;
+    line-height: 62px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.news-section-two .news-carousel .owl-nav .owl-prev:hover,
+.news-section-two .news-carousel .owl-nav .owl-next:hover {
+    background: #f7941d;
+    color: #ffffff;
+}
+
+@media (max-width: 1199.98px) {
+    .news-section-two .news-carousel .owl-nav {
+        display: none;
+    }
+
+    .news-section-two .carousel-column .carousel-outer {
+        margin-right: 0;
+    }
+
+    .news-section-two .news-block .content-box .title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .news-section-two {
+        padding: 90px 0 40px;
+    }
+
+    .news-section-two .title-column {
+        margin-bottom: 30px;
+    }
+
+    .news-section-two .title-column .text {
+        margin-top: 20px;
+    }
+
+    .news-section-two .carousel-column .carousel-outer {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .news-section-two .carousel-column .news-block {
+        padding: 0 15px 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .news-section-two .title-column h2 {
+        font-size: 28px;
+    }
+
+    .news-section-two .title-column .text {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .news-section-two .news-block .content-box {
+        min-height: 90px;
+        padding: 20px 25px;
+    }
+
+    .news-section-two .news-block .content-box .title {
+        font-size: 22px;
+    }
+}
+
+/* 3. Solution Section (service-block-three) Equal Heights */
+.services-section-three .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-block-three {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.service-block-three .inner-box {
+    width: 100%;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. Project Overview Info Boxes Equal Heights */
+.why-choose-us-two .inner-column .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-choose-us-two .inner-column .row>div {
+    display: flex;
+}
+
+.why-choose-us-two .content-column .info-box {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* =========================================================
+   POLICE DUTY - ALIGNMENT FIXES
+========================================================= */
+
+/* Challenges image: bleed to the viewport's left edge on desktop,
+   sit normally inside the column on smaller screens */
+.offer-section-five .image-column .image-box.e-canteen-problem-image {
+    margin-left: 0;
+    top: 0;
+}
+
+.offer-section-five .image-column .image-box.e-canteen-problem-image .image img {
+    width: 100%;
+    height: 588px;
+    object-fit: cover;
+    object-position: right center;
+}
+
+@media (min-width: 1200px) {
+    .offer-section-five .image-column .image-box.e-canteen-problem-image {
+        margin-left: calc(-1 * ((100vw - 1200px) / 2 + 15px));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .offer-section-five .image-column .image-box.e-canteen-problem-image .image img {
+        height: auto;
+    }
+}
+
+/* Solution cards: line up with the section heading at every width */
+.services-section-three .outer-box {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Bandobast flow: keep carousel card titles one line so cards stay equal height */
+.news-section-two .news-carousel .news-block .content-box .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fun fact strip: navy band, orange icons, white counters and labels */
+.fun-fact-section-three {
+    background-color: var(--theme-color1);
+    padding: 45px 0 40px;
+}
+
+.fun-fact-section-three .counter-block-four {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+    .fun-fact-section-three .counter-block-four {
+        margin-bottom: 35px;
+    }
+}
+
+.fun-fact-section-three .counter-block-four .icon {
+    height: auto;
+    width: auto;
+    font-size: 56px;
+    font-weight: 400;
+    color: var(--theme-color2);
+    margin-bottom: 18px;
+}
+
+.fun-fact-section-three .counter-block-four .inner:hover .icon {
+    color: var(--theme-color2);
+}
+
+.fun-fact-section-three .counter-block-four .count-box {
+    margin-bottom: 18px;
+}
+
+.fun-fact-section-three .counter-block-four .count-box,
+.fun-fact-section-three .counter-block-four .count-box .count-text {
+    font-size: 44px;
+    color: #fff;
+}
+
+.fun-fact-section-three .counter-block-four .counter-title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+/* FAQ section: breathing room below the navy fun fact band */
+.portfolio-project-overview-section {
+    padding-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .portfolio-project-overview-section {
+        padding-top: 70px;
+    }
+}
